@@ -12,25 +12,29 @@
     </div>
     <div id="box">
         <div id="form">
-            <form>
+        <!-- the form element has been hardcoded to take in the username, tweet, time of tweeting, and has the submit button
+             and marked that in a div for easier styling-->
+            <form> 
                 <div class="row">
                   <div class="col">
-                    <input type="text" placeholder="Your handle">
+                    <input id= "username" type="text" placeholder="Your handle">
                   </div>
                   <div class="col">
-                    <input type="text" placeholder="Type up to 300 characters">
+                    <input id= "content" type="text" placeholder="Type up to 300 characters">
                   </div>
-                  <div id="timeoftweet">
+                  <div id="otheritems">
                     <p id="timesent"></p>
+                    <p id="nolikes"></p>
+                    <p id="noretweets"></p>
                   </div>
                   <div>
                     <button>Tweet!</button>
                   </div>
                 </div>
               </form>
-
         </div>
         <div id="timeline">
+            <!-- This element stores the 'tweets' that will be fetched from the db.json api -->
 
         </div>
     </div>
