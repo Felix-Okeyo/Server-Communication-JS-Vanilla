@@ -45,8 +45,8 @@ const newTweet = document.getElementById('tweetform')
 let addNewTweet = () =>{     //this function handles event listening based on the data taken in the db.json file
     let username = document.getElementById('username').value
     let content = document.getElementById("content").value
-    let likes = document.getElementById('nolikes').value
-    let retweets = document.getElementById('noretweets').value
+    let likes = document.getElementById('nolikes').defaultValue= "0";
+    let retweets = document.getElementById('noretweets').defaultValue= "0";
     let timestamp = document.getElementById('timesent').value
 
   let tweetData = {
@@ -66,3 +66,7 @@ let addNewTweet = () =>{     //this function handles event listening based on th
    .then(response => response.json())
  }
   newTweet.addEventListener('submit',addNewTweet)
+
+
+
+//The last part handles increasing the number of likes and 
