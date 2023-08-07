@@ -15,9 +15,10 @@ This is a simple Twitter Web App Simulator that allows users to view and post tw
 # Demo
 
 Insert a link to a live demo of the web app (if available)
+
 Features
 
-    View existing tweets fetched from a server. -./
+    View existing tweets fetched from a server. 
     Submit new tweets using the provided form.
     Like and retweet existing tweets (to be implemented).
 

@@ -1,5 +1,5 @@
-/* Reset some default styles and add some basic styles */
-body, html {
+ /* This reset some default styles and adds some basic styling for the page and body */
+ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body, html {
     color: #333;
   }
   
-  /* Main container styles */
+  /* This styles teh main container holding the form and timeline to the middle of the page */
   #box {
     max-width: 600px;
     margin: 0 auto;
@@ -15,26 +15,26 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Header styles */
+  /* This then centers the top and insets a slight margin between it and the box*/
   #header {
     text-align: center;
     margin-bottom: 20px;
   }
   
   #header h1 {
-    font-size: 28px;
+    font-size: 29px;
     margin: 0;
   }
   
-  /* Form styles */
+  /* This then styles the form by adding a better padding and border-radius within the form div*/
   #tweetform {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
   }
-  
-  #tweetform input,
-  #tweetform textarea {
+ 
+  /* This style tyles the input area that takes in the tweet, the handle, date, likes and retweets */
+  #tweetform input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -42,6 +42,7 @@ body, html {
     margin-bottom: 10px;
   }
   
+ /* This styles the tweet button, adds colouring, a hoover effect, curson change, better bordering, and transition change when clicked */
   #tweetform button {
     background-color: #1da1f2;
     color: #fff;
@@ -56,11 +57,12 @@ body, html {
     background-color: #0c8bce;
   }
   
-  /* Timeline styles */
+  /* This adds the margin on the top of the timeline div from the header */
   #timeline {
     margin-top: 20px;
   }
   
+  /* This adds a background, border radius, some padding and margin at the botton for each tweet*/
   #wholetweet {
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -68,20 +70,25 @@ body, html {
     margin-bottom: 10px;
   }
   
+  /* This styles the username*/
   #wholetweet h5 {
     margin: 0;
     font-size: 16px;
     color: #1da1f2;
   }
   
+ /* This styles the tweet itself*/
+
   #wholetweet p {
     margin: 0;
   }
   
+ /* This styles the div below the tweet holding the buttons and timestamp*/
   #wholetweet .belowusername {
     margin-top: 5px;
   }
   
+ /* This styles the buttons and timestamp below the tweet*/
   #wholetweet .buttons button {
     background-color: #fff;
     color: #1da1f2;
@@ -92,22 +99,11 @@ body, html {
     transition: background-color 0.2s ease, color 0.2s ease;
   }
   
+ /* This styles the buttons and adds hovers on each button*/
+
   #wholetweet .buttons button:hover {
     background-color: #1da1f2;
     color: #fff;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 480px) {
-    #box {
-      padding: 10px;
-    }
-    #tweetform input,
-    #tweetform textarea {
-      font-size: 14px;
-    }
-    #tweetform button {
-      font-size: 14px;
-    }
-  }
+
   
