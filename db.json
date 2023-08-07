@@ -1,0 +1,324 @@
+{
+    "tweets":[
+        {
+            "id": 1,
+            "username": "user123",
+            "content": "Just had a delicious lunch! #foodie",
+            "likes": 25,
+            "retweets": 12,
+            "timestamp": "2023-07-17 12:30:00"
+        },
+        {
+            "id": 2,
+            "username": "social_guru",
+            "content": "Excited to announce our new product launch! 🚀 #tech",
+            "likes": 120,
+            "retweets": 50,
+            "timestamp": "2023-07-17 13:45:00"
+        },
+        {
+            "id": 3,
+            "username": "traveler87",
+            "content": "Just landed in Tokyo! #travel",
+            "likes": 89,
+            "retweets": 35,
+            "timestamp": "2023-07-17 15:20:00"
+        },
+        {
+            "id": 4,
+            "username": "coding_ninja",
+            "content": "Working on a new project. 💻 #coding",
+            "likes": 67,
+            "retweets": 20,
+            "timestamp": "2023-07-17 16:55:00"
+        },
+        {
+            "id": 5,
+            "username": "fitness_freak",
+            "content": "Great workout today! 💪 #fitness",
+            "likes": 150,
+            "retweets": 75,
+            "timestamp": "2023-07-17 18:10:00"
+        },
+        {
+            "id": 6,
+            "username": "booklover",
+            "content": "Started reading a new book. 📚 #reading",
+            "likes": 40,
+            "retweets": 15,
+            "timestamp": "2023-07-17 19:30:00"
+        },
+        {
+            "id": 7,
+            "username": "foodie_life",
+            "content": "Trying out a new recipe tonight! 🍲 #cooking",
+            "likes": 95,
+            "retweets": 30,
+            "timestamp": "2023-07-18 09:00:00"
+        },
+        {
+            "id": 8,
+            "username": "adventure_seeker",
+            "content": "Hiking up the mountains! ⛰️ #adventure",
+            "likes": 120,
+            "retweets": 40,
+            "timestamp": "2023-07-18 10:20:00"
+        },
+        {
+            "id": 9,
+            "username": "gamer_life",
+            "content": "Just reached level 100 in the game! 🎮 #gaming",
+            "likes": 220,
+            "retweets": 80,
+            "timestamp": "2023-07-18 11:45:00"
+        },
+        {
+            "id": 10,
+            "username": "pet_lover",
+            "content": "Spending the day with my adorable pets. 🐶🐱 #pets",
+            "likes": 180,
+            "retweets": 70,
+            "timestamp": "2023-07-18 13:00:00"
+        },
+        {
+            "id": 11,
+            "username": "yoga_addict",
+            "content": "Namaste! Yoga session was so calming. 🧘‍♂️ #yoga",
+            "likes": 100,
+            "retweets": 25,
+            "timestamp": "2023-07-18 14:30:00"
+        },
+        {
+            "id": 12,
+            "username": "inspiration_hub",
+            "content": "Believe in yourself and never give up! 💪 #motivation",
+            "likes": 300,
+            "retweets": 120,
+            "timestamp": "2023-07-18 15:55:00"
+        },
+        {
+            "id": 13,
+            "username": "fashionista",
+            "content": "Loving the new fashion trends! 👗 #fashion",
+            "likes": 80,
+            "retweets": 30,
+            "timestamp": "2023-07-18 17:10:00"
+        },
+        {
+            "id": 14,
+            "username": "coffee_lover",
+            "content": "Nothing like a good cup of coffee in the morning! ☕ #coffee",
+            "likes": 135,
+            "retweets": 45,
+            "timestamp": "2023-07-18 18:30:00"
+        },
+        {
+            "id": 15,
+            "username": "artsy_vibes",
+            "content": "Finished a beautiful painting today. 🎨 #art",
+            "likes": 70,
+            "retweets": 20,
+            "timestamp": "2023-07-18 19:45:00"
+        },
+        {
+            "id": 16,
+            "username": "music_lover",
+            "content": "Listening to my favorite song on repeat. 🎶 #music",
+            "likes": 210,
+            "retweets": 90,
+            "timestamp": "2023-07-19 09:15:00"
+        },
+        {
+            "id": 17,
+            "username": "movie_buff",
+            "content": "Watched an amazing movie last night! 🎬 #movies",
+            "likes": 120,
+            "retweets": 40,
+            "timestamp": "2023-07-19 10:30:00"
+        },
+        {
+            "id": 18,
+            "username": "gardener",
+            "content": "Growing beautiful flowers in my garden. 🌸🌼 #gardening",
+            "likes": 50,
+            "retweets": 15,
+            "timestamp": "2023-07-19 11:50:00"
+        },
+        {
+            "id": 19,
+            "username": "food_enthusiast",
+            "content": "Tried a new restaurant, the food was amazing! 🍔🍕 #food",
+            "likes": 180,
+            "retweets": 60,
+            "timestamp": "2023-07-19 13:10:00"
+        },
+        {
+            "id": 20,
+            "username": "tech_geek",
+            "content": "Excited about the latest tech gadgets! 📱💻 #technology",
+            "likes": 250,
+            "retweets": 100,
+            "timestamp": "2023-07-19 14:30:00"
+        },
+        {
+            "id": 21,
+            "username": "fitness_journey",
+            "content": "One step closer to my fitness goals! 💪 #fitness",
+            "likes": 110,
+            "retweets": 30,
+            "timestamp": "2023-07-19 15:55:00"
+        },
+        {
+            "id": 22,
+            "username": "bookworm",
+            "content": "Can't put this book down! 📚 #reading",
+            "likes": 60,
+            "retweets": 25,
+            "timestamp": "2023-07-19 17:10:00"
+        },
+        {
+            "id": 23,
+            "username": "cooking_adventures",
+            "content": "Trying out a challenging recipe tonight! 🍲 #cooking",
+            "likes": 90,
+            "retweets": 35,
+            "timestamp": "2023-07-19 18:30:00"
+        },
+        {
+            "id": 24,
+            "username": "nature_lover",
+            "content": "Enjoying a peaceful day in nature. 🌳 #nature",
+            "likes": 130,
+            "retweets": 50,
+            "timestamp": "2023-07-19 19:45:00"
+        },
+        {
+            "id": 25,
+            "username": "travel_bug",
+            "content": "Planning my next travel adventure! ✈️ #travel",
+            "likes": 280,
+            "retweets": 120,
+            "timestamp": "2023-07-20 09:15:00"
+        },
+        {
+            "id": 26,
+            "username": "coding_genius",
+            "content": "Finally solved that tricky coding problem! 💻 #coding",
+            "likes": 75,
+            "retweets": 25,
+            "timestamp": "2023-07-20 10:30:00"
+        },
+        {
+            "id": 27,
+            "username": "animal_lover",
+            "content": "Volunteering at the local animal shelter today. 🐾 #animals",
+            "likes": 100,
+            "retweets": 30,
+            "timestamp": "2023-07-20 11:50:00"
+        },
+        {
+            "id": 28,
+            "username": "selfcare_time",
+            "content": "Taking time for some self-care today. 💆‍♀️ #selfcare",
+            "likes": 40,
+            "retweets": 15,
+            "timestamp": "2023-07-20 13:10:00"
+        },
+        {
+            "id": 29,
+            "username": "artistic_soul",
+            "content": "Creating art is so therapeutic! 🎨 #art",
+            "likes": 65,
+            "retweets": 20,
+            "timestamp": "2023-07-20 14:30:00"
+        },
+        {
+            "id": 30,
+            "username": "music_addict",
+            "content": "Music is my escape from reality. 🎶 #music",
+            "likes": 190,
+            "retweets": 70,
+            "timestamp": "2023-07-20 15:55:00"
+        },
+        {
+            "id": 31,
+            "username": "movie_lover",
+            "content": "Movie night with friends! 🎬 #movies",
+            "likes": 120,
+            "retweets": 40,
+            "timestamp": "2023-07-20 17:10:00"
+        },
+        {
+            "id": 32,
+            "username": "plant_parent",
+            "content": "My plant collection is growing! 🌱 #plants",
+            "likes": 50,
+            "retweets": 15,
+            "timestamp": "2023-07-20 18:30:00"
+        },
+        {
+            "id": 33,
+            "username": "food_critic",
+            "content": "Reviewing the latest restaurant in town. 🍔🍕 #food",
+            "likes": 100,
+            "retweets": 30,
+            "timestamp": "2023-07-20 19:45:00"
+        },
+        {
+            "id": 34,
+            "username": "gadget_enthusiast",
+            "content": "Can't wait for the latest tech release! 📱💻 #technology",
+            "likes": 180,
+            "retweets": 60,
+            "timestamp": "2023-07-21 09:15:00"
+        },
+        {
+            "id": 35,
+            "username": "workout_junkie",
+            "content": "Pushing my limits at the gym! 💪 #fitness",
+            "likes": 110,
+            "retweets": 30,
+            "timestamp": "2023-07-21 10:30:00"
+        },
+        {
+            "id": 36,
+            "username": "book_addict",
+            "content": "Can't stop reading this book! 📚 #reading",
+            "likes": 60,
+            "retweets": 25,
+            "timestamp": "2023-07-21 11:50:00"
+        },
+        {
+            "id": 37,
+            "username": "culinary_adventures",
+            "content": "Exploring different cuisines! 🍲 #cooking",
+            "likes": 90,
+            "retweets": 35,
+            "timestamp": "2023-07-21 13:10:00"
+        },
+        {
+            "id": 38,
+            "username": "nature_wanderer",
+            "content": "Hiking through the forest. 🌳 #nature",
+            "likes": 130,
+            "retweets": 50,
+            "timestamp": "2023-07-21 14:30:00"
+        },
+        {
+            "id": 39,
+            "username": "wanderlust",
+            "content": "Dreaming of my next travel destination. ✈️ #travel",
+            "likes": 280,
+            "retweets": 120,
+            "timestamp": "2023-07-21 15:55:00"
+        },
+        {
+            "id": 40,
+            "username": "code_enthusiast",
+            "content": "Coding is both challenging and fun! 💻 #coding",
+            "likes": 75,
+            "retweets": 25,
+            "timestamp": "2023-07-21 17:10:00"
+        }
+    ]
+}
