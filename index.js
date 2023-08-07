@@ -1,6 +1,5 @@
 //The logic begins with first fetching the tweets and populating the 'timeline'
 //The second part tackles the form submission
-//The last part addresses making the tweets dynamic whenever one likes or 'retweets' them.
 
 
 const twitterTimeline = document.getElementById('timeline') 
@@ -42,11 +41,11 @@ let timelineData = (data) =>{  //This functions passes an arrow function that ha
 //The second part handles the form submissions 
 //first select the form element for handling the adding of a new tweet
 const newTweet = document.getElementById('tweetform') 
-let addNewTweet = () =>{     //this function handles event listening based on the data taken in the db.json file
+let addNewTweet = () =>{     //this function adds and handles event listening based on the data stored in the db.json file
     let username = document.getElementById('username').value
     let content = document.getElementById("content").value
-    let likes = document.getElementById('nolikes').defaultValue= "0";
-    let retweets = document.getElementById('noretweets').defaultValue= "0";
+    let likes = document.getElementById('nolikes').defaultValue= "0";  //sets default values because by the time of tweeting the likes numbers stand at zero
+    let retweets = document.getElementById('noretweets').defaultValue= "0";  //sets default values because by the time of tweeting the retweet numbers stand at zero
     let timestamp = document.getElementById('timesent').value
 
   let tweetData = {
@@ -69,4 +68,3 @@ let addNewTweet = () =>{     //this function handles event listening based on th
 
 
 
-//The last part handles increasing the number of likes and 
