@@ -41,27 +41,28 @@ let timelineData = (data) =>{  //This functions passes an arrow function that ha
 
 //The second part handles the form submissions 
 //first select the form element for handling the adding of a new tweet
-const newTweet = document.getElementById('form') 
+const newTweet = document.getElementById('tweetform') 
 let addNewTweet = () =>{     //this function handles event listening based on the data taken in the db.json file
     let username = document.getElementById('username').value
-    let content = document.getElementsByClassName("content").value
+    let content = document.getElementById("content").value
     let likes = document.getElementById('nolikes').value
     let retweets = document.getElementById('noretweets').value
+    let timestamp = document.getElementById('timesent').value
 
-let tweetData = {
-    username: username,
-    content: content,
-    likes:likes,
-    retweets:retweets, 
-    timestamp: timestamp
-}
+  let tweetData = {
+     username: username,
+     content: content,
+     likes:likes,
+     retweets:retweets, 
+     timestamp: timestamp
+ }
 
 
-fetch ("http://localhost:3000/tweets", {
+ fetch ("http://localhost:3000/tweets", {
     method:"POST",
     headers:{'Content-Type': 'application/json'},
     body:JSON.stringify(tweetData)
-})
-  .then(response => response.json())
-}
-newTweet.addEventListener('submit',addNewTweet)
+ })
+   .then(response => response.json())
+ }
+  newTweet.addEventListener('submit',addNewTweet)

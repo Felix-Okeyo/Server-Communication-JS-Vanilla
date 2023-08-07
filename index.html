@@ -11,21 +11,21 @@
     <h1>Twitter Web App Simulator</h1>
     </div>
     <div id="box">
-        <div id="form">
+        <div id="tweetform">
         <!-- the form element has been hardcoded to take in the username, tweet, time of tweeting, and has the submit button
              and marked that in a div for easier styling-->
             <form> 
-                <div class="row">
-                  <div class="col">
+                <div>
+                  <div>
                     <input id= "username" type="text" placeholder="Your handle">
                   </div>
-                  <div class="col">
+                  <div>
                     <input id= "content" type="text" placeholder="Type up to 300 characters">
                   </div>
                   <div id="otheritems">
-                    <p id="timesent"></p>
-                    <p id="nolikes"></p>
-                    <p id="noretweets"></p>
+                    <input id="timesent" type="datetime-local" placeholder="YYYY-MM-DD HR:MM:SS">
+                    <input id="nolikes" type="number" placeholder="fake your likes">
+                    <input id="noretweets"type="number" placeholder="hack your retweets">
                   </div>
                   <div>
                     <button type="submit">Tweet!</button>
