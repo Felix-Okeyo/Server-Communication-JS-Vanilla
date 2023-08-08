@@ -18,12 +18,8 @@ Insert a link to a live demo of the web app (if available)
 
 Features
 
-    View existing tweets fetched from a server. ![timeline-view](https://github.com/Felix-Okeyo/Server-Communication-JS-Vanilla/assets/135003630/016a6d8d-f77c-4e08-a9ae-d958ce3537fd)
-![Uploading timeline.png…]()
-
-    
-    Submit new tweets using the provided form. -![form-submission](https://github.com/Felix-Okeyo/Server-Communication-JS-Vanilla/assets/135003630/36688cc7-eee3-4b1f-8db5-7d02e809c2ea)
-
+    View existing tweets fetched from a server.
+    Submit new tweets using the provided form. - SEE PICS DIRECTORY
     Like and retweet existing tweets (to be implemented). - {Implemented Creating and Reading, Remaining with Updating and Deleting} 
 
 # Installation
