@@ -6,6 +6,7 @@ html {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  margin-bottom: 25px;
 }
 
 /* This styles teh main container holding the form and timeline to the middle of the page */
@@ -66,7 +67,7 @@ html {
 }
 
 /* This adds a background, border radius, some padding and margin at the botton for each tweet*/
-#wholetweet {
+.wholetweet {
   background-color: #f9f9f9;
   border-radius: 5px;
   padding: 10px;
@@ -74,7 +75,7 @@ html {
 }
 
 /* This styles the username*/
-#wholetweet h5 {
+.wholetweet h5 {
   margin: 0;
   font-size: 16px;
   color: #1da1f2;
@@ -83,17 +84,17 @@ html {
 
 /* This styles the tweet itself*/
 
-#wholetweet p {
+.wholetweet p {
   margin: 0;
 }
 
 /* This styles the div below the tweet holding the buttons and timestamp*/
-#wholetweet .belowusername {
+.wholetweet .belowusername {
   margin-top: 5px;
 }
 
 /* This styles the buttons and timestamp below the tweet*/
-#wholetweet .buttons button {
+.wholetweet .buttons button {
   background-color: #fff;
   color: #1da1f2;
   border: 1px solid #1da1f2;
@@ -105,7 +106,7 @@ html {
 
 /* This styles the buttons and adds hovers on each button*/
 
-#wholetweet .buttons button:hover {
+.wholetweet .buttons button:hover {
   background-color: #1da1f2;
   color: #fff;
 }
