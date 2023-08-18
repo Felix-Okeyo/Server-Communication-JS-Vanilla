@@ -1,109 +1,156 @@
- /* This reset some default styles and adds some basic styling for the page and body */
- body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* This styles teh main container holding the form and timeline to the middle of the page */
-  #box {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* This then centers the top and insets a slight margin between it and the box*/
-  #header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #header h1 {
-    font-size: 29px;
-    margin: 0;
-  }
-  
-  /* This then styles the form by adding a better padding and border-radius within the form div*/
-  #tweetform {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-  }
- 
-  /* This style tyles the input area that takes in the tweet, the handle, date, likes and retweets */
-  #tweetform input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-  }
-  
- /* This styles the tweet button, adds colouring, a hoover effect, curson change, better bordering, and transition change when clicked */
-  #tweetform button {
-    background-color: #1da1f2;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  #tweetform button:hover {
-    background-color: #0c8bce;
-  }
-  
-  /* This adds the margin on the top of the timeline div from the header */
-  #timeline {
-    margin-top: 20px;
-  }
-  
-  /* This adds a background, border radius, some padding and margin at the botton for each tweet*/
-  #wholetweet {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  /* This styles the username*/
-  #wholetweet h5 {
-    margin: 0;
-    font-size: 16px;
-    color: #1da1f2;
-  }
-  
- /* This styles the tweet itself*/
+/* This reset some default styles and adds some basic styling for the page and body */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
 
-  #wholetweet p {
-    margin: 0;
-  }
-  
- /* This styles the div below the tweet holding the buttons and timestamp*/
-  #wholetweet .belowusername {
-    margin-top: 5px;
-  }
-  
- /* This styles the buttons and timestamp below the tweet*/
-  #wholetweet .buttons button {
-    background-color: #fff;
-    color: #1da1f2;
-    border: 1px solid #1da1f2;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
- /* This styles the buttons and adds hovers on each button*/
+/* This styles teh main container holding the form and timeline to the middle of the page */
+#box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  #wholetweet .buttons button:hover {
-    background-color: #1da1f2;
-    color: #fff;
-  }
+/* This then centers the top and insets a slight margin between it and the box*/
+#header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  
+#header h1 {
+  font-size: 29px;
+  margin: 0;
+}
+
+/* This then styles the form by adding a better padding and border-radius within the form div*/
+#tweetform {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* This style tyles the input area that takes in the tweet, the handle, date, likes and retweets */
+#tweetform input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+/* This styles the tweet button, adds colouring, a hoover effect, curson change, better bordering, and transition change when clicked */
+#tweetform button {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#tweetform button:hover {
+  background-color: #0c8bce;
+}
+
+/* This adds the margin on the top of the timeline div from the header */
+#timeline {
+  margin-top: 20px;
+}
+
+/* This adds a background, border radius, some padding and margin at the botton for each tweet*/
+#wholetweet {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* This styles the username*/
+#wholetweet h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #1da1f2;
+  flex-direction: column;
+}
+
+/* This styles the tweet itself*/
+
+#wholetweet p {
+  margin: 0;
+}
+
+/* This styles the div below the tweet holding the buttons and timestamp*/
+#wholetweet .belowusername {
+  margin-top: 5px;
+}
+
+/* This styles the buttons and timestamp below the tweet*/
+#wholetweet .buttons button {
+  background-color: #fff;
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* This styles the buttons and adds hovers on each button*/
+
+#wholetweet .buttons button:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+/*This section styles the div section containing the 'three dots' that allow editing and deleting the tweet */
+.tweet-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
+/* This styles that button allowing you to choose between the edit or delete */
+.tweet-menu-button {
+  background-color: transparent;
+  border: none;
+  color: #aab8c2;
+  cursor: pointer;
+}
+
+/*This tweet dropdown, basically the three dots allowing you to dropdown a delete and edit button*/
+.tweet-dropdown {
+  position: absolute; /* */
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+
+.tweet-menu:hover .tweet-dropdown {
+  display: block;
+}
+
+.tweet-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: left;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tweet-dropdown button:hover {
+  background-color: #f5f8fa;
+}
