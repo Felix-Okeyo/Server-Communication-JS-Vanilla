@@ -345,12 +345,28 @@
       "id": 43
     },
     {
-      "username": "@Working",
-      "content": "Still on it cause I cant update the timeline",
+      "username": "@user127",
+      "content": "Just had a delicious lunch! #foodie",
       "likes": "0",
       "retweets": "0",
-      "timestamp": "2023-08-18T14:21",
+      "timestamp": "",
       "id": 44
+    },
+    {
+      "username": "@coding_ninja",
+      "content": "Working on a new project. 💻 #coding",
+      "likes": "0",
+      "retweets": "0",
+      "timestamp": "2023-08-18T17:03",
+      "id": 45
+    },
+    {
+      "username": "@coding_ninja",
+      "content": "Working on a new project. 💻 #coding",
+      "likes": "0",
+      "retweets": "0",
+      "timestamp": "2023-08-18T17:29",
+      "id": 46
     }
   ]
 }

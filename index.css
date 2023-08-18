@@ -55,6 +55,7 @@ html {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  margin-bottom: 15px;
 }
 
 #tweetform button:hover {

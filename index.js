@@ -21,16 +21,16 @@ let timelineData = (data) => {
       //this section designs/marks the individual tweet using string interpolation of the individual components and how they are mapped
       `   
     <div class="wholetweet" data-id=${item.id}>
-        <h5>@${item.username}</h5>
+        <h5 class="handle" >@${item.username}</h5>
         <div class="belowusername">
-          <p>${item.content}</p>
+          <p class ="expressions">${item.content}</p>
           <br>
         <div class= "buttons">
             <button id="demLikes">${item.likes} likes</button>
             <button id="demRetweets">${item.retweets} retweets</button>
         </div>
           <p> 
-          <span>${item.timestamp}</span> 
+          <span class ="tweeted-time">${item.timestamp}</span> 
           <p/>
         <div class="tweet-menu">
               <button class="tweet-menu-button">...</button>
@@ -89,82 +89,94 @@ twitterTimeline.addEventListener("click", (e) => {
       headers: { "Content-Type": "application/json" },
     }).then((res) => res.json());
   }
+  if (editButtonPressed) {
+    let twitterHandle = tweetParent.querySelector(".handle").textContent;
+    let tweetContent = tweetParent.querySelector(".expressions").textContent;
+    let timestamp = tweetParent.querySelector(".tweeted-time").textContent;
+
+    username.value = twitterHandle;
+    content.value = tweetContent;
+    timestamp.value = timestamp;
+
+    let updates = {
+      username: username.value,
+      content: content.value,
+      timestamp: timestamp.value,
+      retweets: retweets,
+      likes: likes,
+    };
+
+    //now we update the existing post
+    //grab the edit button
+    const changeTweet = document.querySelector(".submit-btn");
+    changeTweet.addEventListener("click", () => {
+      fetch(`http://localhost:3000/tweets/${tweetId}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updates),
+      }).then((res) => res.json());
+    });
+  }
 });
 
-//The last feature is deleting a tweet
+// // const tweetsContainer = docment.getElementById("timeline");
+// // tweetsContainer
+// //   .querySelector(".edit-button")
+// //   .addEventListener("click", (event) => {
+// //     event.preventDefault();
+// //     //we select the edit button, add a click type of event and pass a default function of preventing auto page reload once the event happens
+// //     let editTweetForm = document.createElement("div");
+// //     //We first create the item and store that data in a variable editTweetForm: a form because we want to do a resubmission really like an update
+// //     editTweetForm.innerHTML =
+// //       //By interpolating we return the similar form as hardcoded in the html for the user to update the submission
+// //       `
+// //     <form class = "update-tweet">
+// //       <div>
+// //         <div>
+// //           <input class= "edit-username" type="text" placeholder="Your twitter handle">
+// //         </div>
+// //         <div>
+// //            <input class= "edit-content" type="text" placeholder="Type up to 300 characters">
+// //         </div>
+// //         <div class="edit-otheritems">
+// //           <input class="edit-timesent" type="datetime-local" placeholder="YYYY-MM-DD HR:MM:SS">
+// //           <input id="edit-nolikes" type="number" placeholder="You currently have zero likes, make it go viral">
+// //           <input class="edit-noretweets" type="number" placeholder="Your retweets start at zero make the tweet fun.">
+// //         </div>
+// //         <div>
+// //           <button type="submit">Update Tweet</button>
+// //         </div>
+// //       </div>
+// //     </form>
+// //     `;
+// //     tweetsContainer.appendChild(editTweetForm);
+// //     //We then add or append the created form to the tweets/timeline so that once the click events happens on the edit button it is presented
+// //     //Now we handle the update by repeating the same thing as a post
+// //     const updateTweetDiv = document.querySelector(".update-tweet");
+// //     updateTweetDiv.addEventListener("submit", (event) => {
+// //       event.preventDefault();
+// //       const updatedUsername = document.querySelector(".edit-username").value;
+// //       const updatedContent = document.querySelector(".edit-content").value;
+// //       const updatedLikes = document.querySelector("#edit-nolikes").value;
+// //       const updatedRetweets = document.querySelector(".edit-noretweets").value;
+// //       const updatedTimestamp = document.getElementById("edit-timesent").value;
 
-// .querySelector("delete-button").addEventListener("click", function () {
-//   let deleteUrl = `${tweetsDataUrl}/${id}`;
-//   fetch(deleteUrl, {
-//     method: "DELETE",
-//     headers: { "Content-Type": "application/json" },
-//   }).then((res) => {
-//     if (res.ok) {
-//       alert("your tweet has been deleted");
-//     } else {
-//       alert("error in deleting tweet");
-//     }
-//   });
-// });
+// //       const updatedTweetData = {
+// //         username: updatedUsername,
+// //         content: updatedContent,
+// //         likes: updatedLikes,
+// //         retweets: updatedRetweets,
+// //         time: updatedTimestamp,
+// //       };
 
-// const tweetsContainer = docment.getElementById("timeline");
-// tweetsContainer
-//   .querySelector(".edit-button")
-//   .addEventListener("click", (event) => {
-//     event.preventDefault();
-//     //we select the edit button, add a click type of event and pass a default function of preventing auto page reload once the event happens
-//     let editTweetForm = document.createElement("div");
-//     //We first create the item and store that data in a variable editTweetForm: a form because we want to do a resubmission really like an update
-//     editTweetForm.innerHTML =
-//       //By interpolating we return the similar form as hardcoded in the html for the user to update the submission
-//       `
-//     <form class = "update-tweet">
-//       <div>
-//         <div>
-//           <input class= "edit-username" type="text" placeholder="Your twitter handle">
-//         </div>
-//         <div>
-//            <input class= "edit-content" type="text" placeholder="Type up to 300 characters">
-//         </div>
-//         <div class="edit-otheritems">
-//           <input class="edit-timesent" type="datetime-local" placeholder="YYYY-MM-DD HR:MM:SS">
-//           <input id="edit-nolikes" type="number" placeholder="You currently have zero likes, make it go viral">
-//           <input class="edit-noretweets" type="number" placeholder="Your retweets start at zero make the tweet fun.">
-//         </div>
-//         <div>
-//           <button type="submit">Update Tweet</button>
-//         </div>
-//       </div>
-//     </form>
-//     `;
-//     tweetsContainer.appendChild(editTweetForm);
-//     //We then add or append the created form to the tweets/timeline so that once the click events happens on the edit button it is presented
-//     //Now we handle the update by repeating the same thing as a post
-//     const updateTweetDiv = document.querySelector(".update-tweet");
-//     updateTweetDiv.addEventListener("submit", (event) => {
-//       event.preventDefault();
-//       const updatedUsername = document.querySelector(".edit-username").value;
-//       const updatedContent = document.querySelector(".edit-content").value;
-//       const updatedLikes = document.querySelector("#edit-nolikes").value;
-//       const updatedRetweets = document.querySelector(".edit-noretweets").value;
-//       const updatedTimestamp = document.getElementById("edit-timesent").value;
+// //       let editUrl = `${tweetsDataUrl}/${i.id}`;
 
-//       const updatedTweetData = {
-//         username: updatedUsername,
-//         content: updatedContent,
-//         likes: updatedLikes,
-//         retweets: updatedRetweets,
-//         time: updatedTimestamp,
-//       };
-
-//       let editUrl = `${tweetsDataUrl}/${i.id}`;
-
-//       fetch(editUrl, {
-//         method: "PUT",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(updatedTweetData),
-//       }).then((response) => response.json());
-//     });
-//   });
+// //       fetch(editUrl, {
+// //         method: "PUT",
+// //         headers: {
+// //           "Content-Type": "application/json",
+// //         },
+// //         body: JSON.stringify(updatedTweetData),
+// //       }).then((response) => response.json());
+// //     });
+// //   })
