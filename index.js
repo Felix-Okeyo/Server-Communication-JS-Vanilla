@@ -66,7 +66,7 @@ let addNewTweet = (tweets) => {
     timestamp: timestamp,
   };
   //The tweetData is them 'posted' or added in db.json server and the timeline updated
-  fetch("https://twitter-vanilla-json.onrender.com", {
+  fetch("https://twitter-vanilla-json.onrender.com/tweets", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(tweetData),
