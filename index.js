@@ -7,7 +7,7 @@ const twitterTimeline = document.querySelector(".timeline");
 //This selects the element to populate by id and stores that in a variable
 
 //Then does the fetch to get the data from the db.json
-fetch("http://localhost:3000/tweets") //takes the server url as a parameter
+fetch("https://twitter-vanilla-json.onrender.com") //takes the server url as a parameter
   .then((response) => response.json()) //passes a callback function that converts the promise/response into json format data
   .then((data) => timelineData(data)); //then then passes the data to the function timelineData as a variable
 
@@ -66,7 +66,7 @@ let addNewTweet = (tweets) => {
     timestamp: timestamp,
   };
   //The tweetData is them 'posted' or added in db.json server and the timeline updated
-  fetch("http://localhost:3000/tweets", {
+  fetch("https://twitter-vanilla-json.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(tweetData),
@@ -84,7 +84,7 @@ twitterTimeline.addEventListener("click", (e) => {
 
   //perform a logic that handles the delete if the delete the button is pressed
   if (deleteButtonPressed) {
-    fetch(`http://localhost:3000/tweets/${tweetId}`, {
+    fetch(`http://https://twitter-vanilla-json.onrender.com/tweets/${tweetId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     }).then((res) => res.json());
@@ -110,7 +110,7 @@ twitterTimeline.addEventListener("click", (e) => {
     //grab the edit button
     const changeTweet = document.querySelector(".submit-btn");
     changeTweet.addEventListener("click", () => {
-      fetch(`http://localhost:3000/tweets/${tweetId}`, {
+      fetch(`https://twitter-vanilla-json.onrender.com/tweets/${tweetId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updates),
