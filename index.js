@@ -1,7 +1,7 @@
 //The logic begins with first fetching the tweets and populating the 'timeline'
 //The second part tackles the form submission
 
-tweetsDataUrl = "https://twitter-vanilla-json.onrender.com";
+tweetsDataUrl = "https://twitter-vanilla-json.onrender.com/tweets";
 
 const twitterTimeline = document.querySelector(".timeline");
 //This selects the element to populate by id and stores that in a variable
