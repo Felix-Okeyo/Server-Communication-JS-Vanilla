@@ -7,7 +7,7 @@ const twitterTimeline = document.querySelector(".timeline");
 //This selects the element to populate by id and stores that in a variable
 
 //Then does the fetch to get the data from the db.json
-fetch("https://twitter-vanilla-json.onrender.com") //takes the server url as a parameter
+fetch("https://twitter-vanilla-json.onrender.com/tweets") //takes the server url as a parameter
   .then((response) => response.json()) //passes a callback function that converts the promise/response into json format data
   .then((data) => timelineData(data)); //then then passes the data to the function timelineData as a variable
 
@@ -84,7 +84,7 @@ twitterTimeline.addEventListener("click", (e) => {
 
   //perform a logic that handles the delete if the delete the button is pressed
   if (deleteButtonPressed) {
-    fetch(`http://https://twitter-vanilla-json.onrender.com/tweets/${tweetId}`, {
+    fetch(`https://twitter-vanilla-json.onrender.com/tweets/${tweetId}`, {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
     }).then((res) => res.json());
